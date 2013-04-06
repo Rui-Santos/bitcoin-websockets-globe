@@ -28,7 +28,7 @@ Inspiration and usefulness
 
 Before you ask, yes, I fully realize the IPs you get in blockchain.info's API 
 are IPs of relaying nodes and nothing more. And yes, that makes the whole thing
-completetly pointless.
+completely pointless.
 
 I originally built it to experiment with WebSockets and because I thought WebGL
 Globe was a cool visualization tool. It just so happens that many websites in 
