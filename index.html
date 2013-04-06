@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bitcoin WebGL Globe </title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<h1>Realtime Bitcoin transactions <a href="#disclaimer">*</a></h1>
+
+<div class="ui" id="container"></div>
+
+<div class="ui info" id="disclaimer">
+<p>
+    Bitcoin transactions data acquired from <a href="http://blockchain.info/">blockchain.info</a>'s WebSocket API<span class="bull">&bull;</span>IP geolocation provided by <a href="http://freegeoip.net/">freegeoip.net</a><br />
+    Original <a href="http://www.chromeexperiments.com/globe">WebGL Globe</a> © Google Data Arts Team<br />
+
+</p>
+<p>    
+    (*) Yes, geolocating bitcoin transactions doesn't really make sense as the ip we get is only the ip of the node relaying the transaction. It's just a fun experiment, nothing more. <br />If you liked it, you can fork it and/or send a donation to <span class="addr">1BDAce1vzykU8LiHsKPSmFDmK2Cp9ug5KQ</span>.
+</p>
+</div>
+
+<!--<div id="toggleui" class="info"><a href="#">[Hide UI]</a></div>-->
+
+<div class="ui" id="panel">
+    <button id="disconnect" disabled>Disconnect</button>
+    <div class="output" id="ws_output"></div>
+    <div class="output" id="geo_output"></div>
+</div>
+<script src="globe/third-party/system.min.js"></script>
+<script src="globe/third-party/three.min.js"></script>
+<script src="globe/globe.js"></script>
+<script src="js/geoip.js"></script>
+<script src="js/blockchain.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
