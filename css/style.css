@@ -73,6 +73,10 @@ div.error {
     color: #999;
 }
 
+.hidden {
+  display: none! important;
+}
+
 #panel {
     position: absolute;
     top: 0;

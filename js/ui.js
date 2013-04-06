@@ -1,16 +1,14 @@
 "use strict";
 
 var UI = (function() {
-    var disconnect_button;
-    var ws_output;
-    var geo_output;
-    var panel;
+    var disconnect_button, toggleui_link, ws_output, geo_output, panel;
 
     var init = function(b, g) {
         ws_output = document.getElementById('ws_output');
         geo_output = document.getElementById('geo_output');
         panel = document.getElementById('panel');
         disconnect_button = document.getElementById('disconnect');
+        toggleui_link = document.querySelector('#toggleui a');
 
         geo_output.dataset.count = 0;
         ws_output.dataset.count = 0;
@@ -21,6 +19,14 @@ var UI = (function() {
 
         panel.addEventListener('mouseout', function() {
             panel.classList.remove('visible');
+        });
+
+        toggleui_link.addEventListener('click', function(e) {
+            var elms = [].slice.call(document.querySelectorAll('.ui'), 0);
+            elms.forEach(function(item) {
+                item.classList.toggle('hidden');
+            });
+            e.preventDefault();
         });
 
         return {
