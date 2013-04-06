@@ -9,6 +9,8 @@ bitcoin transactions in realtime on a world globe. It's built using modern web
 technologies (WebGL, WebSockets, etc) and thefore will only work with a recent
 browser.
 
+Demo : http://diox.github.io/bitcoin-websockets-globe/
+
 Data and libraries used
 -----------------------
 
