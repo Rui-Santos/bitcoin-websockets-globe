@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: #aaa;
+  color: #eee;
   text-decoration: none;
   font-weight: bold;
 }
@@ -37,16 +37,11 @@ a:hover {
   color: #999;
 }
 
-.addr {
-  color: #f6f6f6;
-  font-weight: bold;
-}
-
 h1 {
   position: absolute;
-  top: 20px;
+  top: 25px;
   width: 270px;
-  left: 20px;
+  left: 65px;
   background-color: rgba(0,0,0,0.2);
   border-radius: 3px;
   font: 30px Georgia;
@@ -69,10 +64,6 @@ div.error {
     right: 10px;
 }
 
-#toggleui a {
-    color: #999;
-}
-
 .hidden {
   display: none! important;
 }
@@ -88,6 +79,7 @@ div.error {
 
 #panel.visible {
     height: 150px;
+    z-index: 43;
 }
 
 #panel div.output {
